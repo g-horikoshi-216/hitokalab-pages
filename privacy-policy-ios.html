@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ヒトカラボ iOS プライバシーポリシー</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f4ef;
+      --card: #fffdf8;
+      --text: #1f2933;
+      --muted: #52606d;
+      --line: #d9d3c7;
+      --accent: #b45309;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(180, 83, 9, 0.12), transparent 24rem),
+        linear-gradient(180deg, #faf7f2 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(860px, calc(100vw - 32px));
+      margin: 40px auto;
+      padding: 32px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 18px 50px rgba(31, 41, 51, 0.08);
+    }
+
+    h1, h2, h3 {
+      line-height: 1.35;
+      margin: 0 0 12px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      letter-spacing: 0.02em;
+    }
+
+    h2 {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      font-size: 1.35rem;
+    }
+
+    h3 {
+      margin-top: 20px;
+      font-size: 1.05rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    .updated {
+      margin: 8px 0 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .lead {
+      margin: 0 0 20px;
+      color: var(--muted);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 8px 0 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 16px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: rgba(180, 83, 9, 0.08);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    code {
+      padding: 0.1em 0.35em;
+      background: rgba(31, 41, 51, 0.06);
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>ヒトカラボ iOS プライバシーポリシー</h1>
+    <p class="updated">最終更新日: 2026年3月21日</p>
+    <p class="lead">ヒトカラボ（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本ポリシーは、iOS版アプリにおけるデータの取り扱いについて説明します。</p>
+
+    <h2>1. 収集するデータ</h2>
+
+    <h3>1.1 音声データ</h3>
+    <ul>
+      <li>本アプリは、ユーザーが録音画面で録音を開始した場合に限り、マイクから音声を録音します。</li>
+      <li>録音データは M4A 形式（AAC、44.1kHz、128kbps）で iPhone または iPad のアプリ内ストレージに保存されます。</li>
+      <li>無料プランの最大録音時間は 4 分、プレミアムプランの最大録音時間は 10 分です。</li>
+    </ul>
+
+    <h3>1.2 楽曲認識結果</h3>
+    <ul>
+      <li>ユーザーが楽曲認識を要求した場合、認識結果（曲名、アーティスト名、認識ステータス、更新日時）がデバイス内に保存されます。</li>
+    </ul>
+
+    <h3>1.3 録音のメタ情報</h3>
+    <ul>
+      <li>録音ごとに、ファイル名、ファイルパス、録音時間、ファイルサイズ、作成日時、更新日時、手動入力フラグ、お気に入りフラグを保存します。</li>
+    </ul>
+
+    <h3>1.4 収集しないデータ</h3>
+    <ul>
+      <li>氏名、メールアドレス、電話番号などの個人情報</li>
+      <li>位置情報</li>
+      <li>連絡先、写真、カメラ</li>
+      <li>広告識別子</li>
+      <li>アナリティクスデータ</li>
+      <li>クラッシュレポートサービスへの送信データ</li>
+    </ul>
+
+    <h2>2. データの保存</h2>
+    <ul>
+      <li>録音ファイル、楽曲情報、録音メタ情報はデバイスのローカルストレージに保存されます。</li>
+      <li>外部サーバーやクラウドストレージへの自動同期は行いません。</li>
+      <li>アプリがデバイス内に保存するデータは、通常の利用方法では他のアプリから直接参照できません。</li>
+    </ul>
+
+    <h2>3. 外部サービスへのデータ送信</h2>
+
+    <h3>3.1 ACRCloud（楽曲認識サービス）</h3>
+    <ul>
+      <li>目的: 録音された音声から楽曲を特定するため</li>
+      <li>送信先: <code>identify-ap-southeast-1.acrcloud.com</code></li>
+      <li>送信されるデータ: 録音された音声ファイル</li>
+      <li>送信タイミング: ユーザーが楽曲認識を明示的に要求した場合のみ</li>
+      <li>自動送信: 行いません</li>
+      <li>プライバシーポリシー: <a href="https://www.acrcloud.com/privacy">https://www.acrcloud.com/privacy</a></li>
+    </ul>
+
+    <h3>3.2 MusicBrainz（メタデータ補完）</h3>
+    <ul>
+      <li>目的: ACRCloud の認識結果に ISRC が含まれる場合、タイトルやアーティスト名を補完するため</li>
+      <li>送信先: <code>musicbrainz.org</code></li>
+      <li>送信されるデータ: ISRC のみ。録音音声そのものは送信しません。</li>
+      <li>送信タイミング: ユーザーが楽曲認識を要求し、かつ ISRC が取得できた場合のみ</li>
+      <li>自動送信: 行いません</li>
+      <li>プライバシーポリシー: <a href="https://metabrainz.org/privacy">https://metabrainz.org/privacy</a></li>
+    </ul>
+
+    <h3>3.3 その他の外部サービス</h3>
+    <ul>
+      <li>広告ネットワーク、アナリティクス、トラッキング、クラッシュレポート用の第三者サービスは使用していません。</li>
+    </ul>
+
+    <h2>4. 使用する権限と機能</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>権限または機能</th>
+          <th>用途</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>マイク</td>
+          <td>カラオケ練習の録音</td>
+        </tr>
+        <tr>
+          <td>ネットワーク通信</td>
+          <td>ACRCloud への楽曲認識リクエスト、MusicBrainz へのメタデータ補完</td>
+        </tr>
+        <tr>
+          <td>バックグラウンドオーディオ</td>
+          <td>音声再生の継続</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>5. データの削除</h2>
+    <ul>
+      <li>ユーザーはアプリ内から個々の録音データを削除できます。</li>
+      <li>削除操作により、録音ファイルおよび関連する楽曲情報がデバイスから削除されます。</li>
+      <li>アプリをアンインストールすると、保存済みデータはデバイスから削除されます。</li>
+    </ul>
+
+    <h2>6. データの共有</h2>
+    <ul>
+      <li>本アプリが録音データを外部サーバーに自動送信することはありません。</li>
+      <li>楽曲認識のため ACRCloud に送信された音声データの取り扱いは、ACRCloud のプライバシーポリシーに準じます。</li>
+      <li>MusicBrainz に送信される ISRC の取り扱いは、MusicBrainz のプライバシーポリシーに準じます。</li>
+      <li>本アプリは広告目的またはトラッキング目的でデータを第三者へ共有しません。</li>
+    </ul>
+
+    <h2>7. セキュリティ</h2>
+    <ul>
+      <li>録音データはデバイスの内部ストレージに保存されます。</li>
+      <li>ACRCloud および MusicBrainz との通信は HTTPS で保護されています。</li>
+      <li>本アプリはユーザー認証機能を持たず、アカウント情報を保持しません。</li>
+    </ul>
+
+    <h2>8. 本ポリシーの変更</h2>
+    <ul>
+      <li>本ポリシーは必要に応じて更新されることがあります。</li>
+      <li>重要な変更がある場合は、アプリ内または公開ページ上で更新内容を案内します。</li>
+    </ul>
+  </main>
+</body>
+</html>
