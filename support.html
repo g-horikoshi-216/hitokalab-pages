@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ヒトカラボ サポート</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f4ef;
+      --card: #fffdf8;
+      --text: #1f2933;
+      --muted: #52606d;
+      --line: #d9d3c7;
+      --accent: #b45309;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(180, 83, 9, 0.12), transparent 24rem),
+        linear-gradient(180deg, #faf7f2 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(860px, calc(100vw - 32px));
+      margin: 40px auto;
+      padding: 32px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 18px 50px rgba(31, 41, 51, 0.08);
+    }
+
+    h1, h2, h3 {
+      line-height: 1.35;
+      margin: 0 0 12px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      letter-spacing: 0.02em;
+    }
+
+    h2 {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      font-size: 1.35rem;
+    }
+
+    h3 {
+      margin-top: 20px;
+      font-size: 1.05rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    .updated {
+      margin: 8px 0 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .lead {
+      margin: 0 0 20px;
+      color: var(--muted);
+    }
+
+    ul, ol {
+      padding-left: 1.2rem;
+      margin: 8px 0 16px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    details {
+      margin: 12px 0;
+      padding: 12px 16px;
+      background: rgba(180, 83, 9, 0.04);
+      border-radius: 10px;
+      border: 1px solid var(--line);
+    }
+
+    summary {
+      font-weight: 600;
+      cursor: pointer;
+      padding: 4px 0;
+    }
+
+    details[open] summary {
+      margin-bottom: 8px;
+    }
+
+    .contact-box {
+      margin: 16px 0;
+      padding: 20px 24px;
+      background: rgba(180, 83, 9, 0.06);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .contact-box a {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>ヒトカラボ サポート</h1>
+    <p class="updated">最終更新日: 2026年4月2日</p>
+    <p class="lead">ヒトカラボは、ひとりカラオケで歌った曲を録音し、楽曲の自動認識と履歴管理ができるiOSアプリです。このページではよくある質問への回答やお問い合わせ方法をご案内します。</p>
+
+    <h2>よくある質問</h2>
+
+    <details>
+      <summary>録音データは外部に送信されますか?</summary>
+      <p>録音データはデバイス内に保存され、自動的に外部へ送信されることはありません。楽曲認識を明示的に要求した場合に限り、録音データが楽曲認識サービス(ACRCloud)に送信されます。</p>
+    </details>
+
+    <details>
+      <summary>楽曲認識がうまくいきません</summary>
+      <p>以下をご確認ください:</p>
+      <ul>
+        <li>インターネットに接続されているか確認してください。</li>
+        <li>録音環境のBGM(カラオケ音源)が大きすぎると認識精度が下がる場合があります。</li>
+        <li>録音時間が短すぎると認識できないことがあります。ある程度の長さで録音をお試しください。</li>
+        <li>履歴画面から再度「認識する」をお試しください。</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>無料プランではどこまで使えますか?</summary>
+      <ul>
+        <li>楽曲認識: 月3回まで</li>
+        <li>録音時間: 最大4分</li>
+        <li>録音・再生・履歴管理: 制限なし</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>プレミアムプランの内容を教えてください</summary>
+      <p>月額480円で以下の機能が使えます:</p>
+      <ul>
+        <li>楽曲認識が無制限</li>
+        <li>録音時間が最大10分</li>
+        <li>お気に入り登録</li>
+        <li>連続再生</li>
+        <li>再生モード切替(リピート・シャッフル)</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>購入を復元するには?</summary>
+      <p>アプリ内の「設定」画面にある「購入を復元」ボタンをタップしてください。以前購入したサブスクリプションが復元されます。</p>
+    </details>
+
+    <h2>サブスクリプションの管理</h2>
+
+    <h3>解約方法</h3>
+    <ol>
+      <li>iPhoneの「設定」アプリを開く</li>
+      <li>画面上部の自分の名前(Apple ID)をタップ</li>
+      <li>「サブスクリプション」をタップ</li>
+      <li>「ヒトカラボ」を選択</li>
+      <li>「サブスクリプションをキャンセル」をタップ</li>
+    </ol>
+    <p>またはアプリ内の「設定」画面にある「サブスクリプション管理」からAppleの管理画面に遷移できます。</p>
+
+    <h3>自動更新について</h3>
+    <p>プレミアムプランは月単位で自動更新されます。解約しない限り毎月自動的に課金されます。解約後も、現在の課金期間が終了するまではプレミアム機能をご利用いただけます。</p>
+
+    <h2>データの削除</h2>
+    <ul>
+      <li><strong>個別の録音を削除:</strong> 履歴画面で録音を左にスワイプし、削除してください。</li>
+      <li><strong>全データを削除:</strong> アプリをアンインストールすると、全ての録音データ、認識結果、設定が完全に削除されます。</li>
+    </ul>
+    <p>録音データはデバイス内にのみ保存されているため、アプリを削除すればサーバーなどにデータが残ることはありません。</p>
+
+    <h2>お問い合わせ</h2>
+    <p>ご質問、不具合の報告、ご要望がございましたら、下記メールアドレスまでお気軽にお問い合わせください。回答までにお時間をいただく場合があります。</p>
+    <div class="contact-box">
+      <a href="mailto:hitokalab@gmail.com">hitokalab@gmail.com</a>
+    </div>
+
+    <footer>
+      <a href="privacy-policy-ios.html">プライバシーポリシー</a>
+    </footer>
+  </main>
+</body>
+</html>
