@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ヒトカラボ — ひとりカラオケの録音・曲名認識・履歴管理アプリ</title>
+  <meta name="description" content="ヒトカラボは、ひとりカラオケで歌った曲を録音し、曲名を自動認識、履歴として管理できるiOSアプリです。録音データは端末内に保存。アカウント登録不要で、プライバシーも安心。">
+  <meta name="keywords" content="ヒトカラボ,ヒトカラ,ひとりカラオケ,カラオケ 録音 アプリ,歌 練習 アプリ,曲名認識,歌声 録音,履歴管理">
+  <link rel="canonical" href="https://g-horikoshi-216.github.io/hitokalab-pages/">
+
+  <!-- OGP -->
+  <meta property="og:title" content="ヒトカラボ — ひとりカラオケの録音・曲名認識・履歴管理アプリ">
+  <meta property="og:description" content="歌声を録音し、曲名を自動認識。ひとりカラオケの練習履歴をかんたんに管理できるiOSアプリです。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://g-horikoshi-216.github.io/hitokalab-pages/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="ヒトカラボ">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ヒトカラボ — ひとりカラオケの録音・曲名認識・履歴管理アプリ">
+  <meta name="twitter:description" content="歌声を録音し、曲名を自動認識。ひとりカラオケの練習履歴をかんたんに管理できるiOSアプリです。">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "ヒトカラボ",
+    "url": "https://apps.apple.com/jp/app/%E3%83%92%E3%83%88%E3%82%AB%E3%83%A9%E3%83%9C/id6760980399",
+    "operatingSystem": "iOS",
+    "applicationCategory": "MusicApplication",
+    "description": "ひとりカラオケで歌った曲を録音し、曲名を自動認識、履歴として管理できるアプリ",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero__bg-orb hero__bg-orb--1" aria-hidden="true"></div>
+    <div class="hero__bg-orb hero__bg-orb--2" aria-hidden="true"></div>
+    <div class="hero__bg-orb hero__bg-orb--3" aria-hidden="true"></div>
+
+    <nav class="hero__nav">
+      <span class="hero__logo">ヒトカラボ</span>
+    </nav>
+
+    <div class="hero__content">
+      <div class="hero__keywords" aria-hidden="true">
+        <span class="hero__kw hero__kw--1">Record</span>
+        <span class="hero__kw hero__kw--2">Discover</span>
+        <span class="hero__kw hero__kw--3">Reflect</span>
+      </div>
+
+      <h1 class="hero__title anim-up">
+        <span class="hero__title-line">録音して、曲名が分かって、</span>
+        <span class="hero__title-line">いつでも聴き返せる。</span>
+      </h1>
+
+      <p class="hero__sub anim-up anim-delay-1">
+        歌声を録音し、曲名を自動認識。<br>
+        ヒトカラの練習を、あとから振り返りやすくするアプリです。
+      </p>
+
+      <div class="hero__cta anim-up anim-delay-2">
+        <a href="https://apps.apple.com/jp/app/%E3%83%92%E3%83%88%E3%82%AB%E3%83%A9%E3%83%9C/id6760980399" class="app-badge" target="_blank" rel="noopener noreferrer" aria-label="App Storeからダウンロード">
+          <span class="app-badge__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="34" height="34" focusable="false">
+              <path fill="currentColor" d="M16.89 12.91c.03 2.97 2.6 3.96 2.63 3.97-.02.07-.41 1.4-1.34 2.78-.81 1.19-1.64 2.37-2.97 2.39-1.31.03-1.73-.78-3.23-.78s-1.96.76-3.21.81c-1.28.05-2.26-1.29-3.07-2.47-1.66-2.39-2.93-6.76-1.22-9.73.85-1.47 2.36-2.41 4-2.44 1.25-.03 2.44.84 3.22.84.78 0 2.24-1.03 3.77-.88.64.03 2.43.26 3.58 1.94-.09.05-2.14 1.25-2.13 3.57Zm-2.02-7.12c.67-.81 1.12-1.94.99-3.06-.97.04-2.14.64-2.84 1.45-.62.72-1.17 1.87-1.02 2.98 1.08.08 2.18-.55 2.87-1.37Z"/>
+            </svg>
+          </span>
+          <span class="app-badge__text">
+            <span class="app-badge__title">App Store</span>
+            <span class="app-badge__subtitle">からダウンロード</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="hero__wave" aria-hidden="true">
+        <svg viewBox="0 0 800 60" preserveAspectRatio="none" width="100%" height="60">
+          <path d="M0 30 Q50 10 100 30 T200 30 T300 30 T400 30 T500 30 T600 30 T700 30 T800 30" fill="none" stroke="var(--primary)" stroke-width="1.5" opacity="0.3"/>
+          <path d="M0 35 Q50 50 100 35 T200 35 T300 35 T400 35 T500 35 T600 35 T700 35 T800 35" fill="none" stroke="var(--secondary)" stroke-width="1" opacity="0.2"/>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== PROBLEM / INSIGHT ===== -->
+    <section class="insight" id="insight">
+      <div class="insight__inner">
+        <p class="insight__label anim-up">Insight</p>
+        <h2 class="insight__heading anim-up">
+          ヒトカラの練習、<wbr>その場限りにしない。
+        </h2>
+        <div class="insight__body anim-up anim-delay-1">
+          <p>
+            ひとりカラオケは、気兼ねなく練習できる大事な時間。<br>
+            でも、何を歌ったか、どこがうまく歌えたかは、意外とすぐに忘れてしまいます。
+          </p>
+          <p>
+            あとで聴き返したい。歌った曲も残しておきたい。<br>
+            でも、毎回メモしたり整理したりするのは面倒です。
+          </p>
+          <p class="insight__accent">
+            ヒトカラボは、練習の記録を<br class="sp-only">無理なく続けるためのアプリです。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="features" id="features">
+      <p class="features__label anim-up">Features</p>
+
+      <!-- Feature 1: Recording -->
+      <article class="feat feat--rec anim-up">
+        <div class="feat__visual">
+          <div class="feat__waveform" aria-hidden="true">
+            <div class="waveform-bar" style="--h:40%"></div>
+            <div class="waveform-bar" style="--h:65%"></div>
+            <div class="waveform-bar" style="--h:85%"></div>
+            <div class="waveform-bar" style="--h:55%"></div>
+            <div class="waveform-bar" style="--h:90%"></div>
+            <div class="waveform-bar" style="--h:70%"></div>
+            <div class="waveform-bar" style="--h:45%"></div>
+            <div class="waveform-bar" style="--h:80%"></div>
+            <div class="waveform-bar" style="--h:60%"></div>
+            <div class="waveform-bar" style="--h:50%"></div>
+            <div class="waveform-bar" style="--h:75%"></div>
+            <div class="waveform-bar" style="--h:95%"></div>
+            <div class="waveform-bar" style="--h:65%"></div>
+            <div class="waveform-bar" style="--h:40%"></div>
+            <div class="waveform-bar" style="--h:55%"></div>
+            <div class="waveform-bar" style="--h:70%"></div>
+          </div>
+          <span class="feat__badge">REC</span>
+        </div>
+        <div class="feat__text">
+          <h3>ワンタップで録音</h3>
+          <p>カラオケで歌った曲をすぐに録音。バックグラウンドでも録音が継続するので、他のアプリを操作しながらでも安心です。</p>
+        </div>
+      </article>
+
+      <!-- Feature 2: Recognition -->
+      <article class="feat feat--recognize anim-up">
+        <div class="feat__text">
+          <h3>曲名を自動認識</h3>
+          <p>録音した歌声から、曲名とアーティスト名を自動で識別。カラオケの伴奏が入った歌声でも認識できます。手動で編集することもできます。</p>
+        </div>
+        <div class="feat__visual feat__visual--recognize">
+          <div class="recognize-result">
+            <span class="recognize-result__icon" aria-hidden="true">&#9835;</span>
+            <div class="recognize-result__info">
+              <span class="recognize-result__title">夜に駆ける</span>
+              <span class="recognize-result__artist">YOASOBI</span>
+            </div>
+            <span class="recognize-result__status">Identified</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Feature 3: History -->
+      <article class="feat feat--history anim-up">
+        <div class="feat__visual feat__visual--history">
+          <div class="history-timeline" aria-hidden="true">
+            <div class="timeline-dot timeline-dot--active"></div>
+            <div class="timeline-line"></div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="history-stack">
+            <div class="history-card history-card--1">
+              <span class="history-card__date">4/10</span>
+              <span class="history-card__song">残酷な天使のテーゼ</span>
+            </div>
+            <div class="history-card history-card--2">
+              <span class="history-card__date">4/8</span>
+              <span class="history-card__song">紅蓮華</span>
+            </div>
+            <div class="history-card history-card--3">
+              <span class="history-card__date">4/5</span>
+              <span class="history-card__song">Lemon</span>
+            </div>
+          </div>
+        </div>
+        <div class="feat__text">
+          <h3>履歴をかんたんに管理</h3>
+          <p>録音した曲を一覧で管理。日付ごとにグルーピングされ、曲名やアーティスト名で検索できます。お気に入り登録やフィルタ機能も搭載しています。</p>
+        </div>
+      </article>
+
+      <!-- Feature 4: Playback -->
+      <article class="feat feat--playback anim-up">
+        <div class="feat__text">
+          <h3>いつでも聴き返す</h3>
+          <p>履歴からすぐに再生。リピート・単曲・シャッフルの再生モードを切り替えられます。バックグラウンド再生やロック画面からの操作にも対応しています。</p>
+        </div>
+        <div class="feat__visual feat__visual--playback">
+          <div class="playback-ui" aria-hidden="true">
+            <div class="playback-ui__progress">
+              <div class="playback-ui__bar"></div>
+            </div>
+            <div class="playback-ui__controls">
+              <span class="playback-ui__btn">&#9664;&#9664;</span>
+              <span class="playback-ui__btn playback-ui__btn--play">&#9654;</span>
+              <span class="playback-ui__btn">&#9654;&#9654;</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== PRIVACY ===== -->
+    <section class="privacy" id="privacy">
+      <div class="privacy__inner">
+        <p class="privacy__label anim-up">Privacy</p>
+        <h2 class="privacy__heading anim-up">練習の記録は、<wbr>端末の中にきちんと残る。</h2>
+        <div class="privacy__grid anim-up anim-delay-1">
+          <div class="privacy__item">
+            <div class="privacy__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3>端末内保存</h3>
+            <p>録音データはデバイスのローカルストレージにのみ保存されます。外部サーバーへの自動送信はありません。</p>
+          </div>
+          <div class="privacy__item">
+            <div class="privacy__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="8"/></svg>
+            </div>
+            <h3>アカウント不要</h3>
+            <p>メールアドレスも電話番号も不要。ダウンロードしたらすぐに使い始められます。</p>
+          </div>
+          <div class="privacy__item">
+            <div class="privacy__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>最小限の通信</h3>
+            <p>曲名認識を明示的に要求したときだけ、認識サーバーと通信します。それ以外の通信は発生しません。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PREMIUM ===== -->
+    <section class="premium" id="premium">
+      <div class="premium__inner">
+        <p class="premium__label anim-up">Premium</p>
+        <h2 class="premium__heading anim-up">練習量が増えても、<wbr>もっと使いやすく。</h2>
+        <p class="premium__lead anim-up anim-delay-1">無料でも始められます。プレミアムでは、録音時間や曲名認識回数の制限が広がり、振り返りもしやすくなります。</p>
+
+        <div class="premium__plans anim-up anim-delay-1">
+          <div class="plan plan--free">
+            <h3 class="plan__name">Free</h3>
+            <p class="plan__price">無料</p>
+            <ul class="plan__list">
+              <li>月3回まで曲名認識</li>
+              <li>1回あたり最大4分の録音</li>
+              <li>録音・再生・履歴管理</li>
+            </ul>
+          </div>
+          <div class="plan plan--premium">
+            <div class="plan__accent-line" aria-hidden="true"></div>
+            <h3 class="plan__name">Premium</h3>
+            <p class="plan__price"><span class="plan__amount">480</span><span class="plan__unit">円 / 月</span></p>
+            <ul class="plan__list">
+              <li>曲名認識が無制限</li>
+              <li>1回あたり最大10分の録音</li>
+              <li>お気に入り登録</li>
+              <li>連続再生</li>
+              <li>再生モード切替</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq" id="faq">
+      <div class="faq__inner">
+        <p class="faq__label anim-up">FAQ</p>
+        <h2 class="faq__heading anim-up">よくある質問</h2>
+        <div class="faq__list anim-up anim-delay-1">
+          <details class="faq__item">
+            <summary>ひとりカラオケの練習を記録できますか?</summary>
+            <p>はい。ワンタップで録音を開始でき、バックグラウンドでも録音が継続します。カラオケルームでスマホを置いたまま歌に集中できます。</p>
+          </details>
+          <details class="faq__item">
+            <summary>曲名は自動で認識できますか?</summary>
+            <p>録音した音声から曲名とアーティスト名を自動で識別します。カラオケの伴奏が入った歌声でも認識可能です。認識できなかった場合は手動で曲名を入力することもできます。</p>
+          </details>
+          <details class="faq__item">
+            <summary>録音データはどこに保存されますか?</summary>
+            <p>録音データはお使いのデバイスのローカルストレージにのみ保存されます。外部サーバーやクラウドへの自動アップロードは一切ありません。</p>
+          </details>
+          <details class="faq__item">
+            <summary>アカウント登録は必要ですか?</summary>
+            <p>いいえ、アカウント登録は不要です。アプリをダウンロードしたらすぐに使い始められます。メールアドレスや電話番号の入力も必要ありません。</p>
+          </details>
+          <details class="faq__item">
+            <summary>楽曲認識がうまくいきません</summary>
+            <p>インターネット接続、録音時間、録音環境をご確認ください。BGMが大きすぎる場合や録音が短すぎる場合は認識精度が下がることがあります。履歴画面から再度「認識する」を試すこともできます。</p>
+          </details>
+          <details class="faq__item">
+            <summary>無料プランではどこまで使えますか?</summary>
+            <p>無料プランでは、月3回までの曲名認識、1回あたり最大4分の録音、録音・再生・履歴管理を利用できます。プレミアムでは認識回数無制限や連続再生などが追加されます。</p>
+          </details>
+          <details class="faq__item">
+            <summary>購入を復元するには?</summary>
+            <p>アプリ内の設定画面にある「購入を復元」から、以前購入したサブスクリプションを復元できます。同じApple IDでサインインしていることをご確認ください。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SUPPORT ===== -->
+    <section class="support" id="support">
+      <div class="support__inner">
+        <p class="support__label anim-up">Support</p>
+        <h2 class="support__heading anim-up">困ったときに確認したいことを、まとめています。</h2>
+        <p class="support__lead anim-up anim-delay-1">サブスクリプションの管理方法、データ削除、問い合わせ先をこのページにまとめています。</p>
+
+        <div class="support__grid">
+          <article class="support-card anim-up">
+            <h3>サブスクリプションの管理</h3>
+            <p>解約はiPhoneの設定から行えます。現在の課金期間が終了するまではプレミアム機能を利用できます。</p>
+            <ol class="support-card__steps">
+              <li>iPhoneの「設定」アプリを開く</li>
+              <li>画面上部の自分の名前（Apple ID）をタップ</li>
+              <li>「サブスクリプション」をタップ</li>
+              <li>「ヒトカラボ」を選択</li>
+              <li>「サブスクリプションをキャンセル」をタップ</li>
+            </ol>
+          </article>
+
+          <article class="support-card anim-up anim-delay-1">
+            <h3>データの削除</h3>
+            <p>録音データは端末内にのみ保存されます。個別削除も、アプリ削除による全削除も可能です。</p>
+            <ul class="support-card__list">
+              <li>履歴画面で録音を左にスワイプすると個別削除できます。</li>
+              <li>アプリをアンインストールすると、録音・認識結果・設定は端末から完全に削除されます。</li>
+              <li>サーバー側に録音データが残ることはありません。</li>
+            </ul>
+          </article>
+
+          <article class="support-card support-card--contact anim-up anim-delay-1">
+            <h3>お問い合わせ</h3>
+            <p>ご質問、不具合報告、ご要望はメールで受け付けています。プライバシーポリシーもこちらから確認できます。</p>
+            <div class="support-card__actions">
+              <a href="mailto:hitokalab@gmail.com" class="btn btn--primary">hitokalab@gmail.com</a>
+              <a href="https://g-horikoshi-216.github.io/hitokalab-pages/privacy-policy-ios.html" class="support-card__text-link">iOSプライバシーポリシーを見る</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="cta" id="download">
+      <div class="cta__inner">
+        <div class="cta__bg-glow" aria-hidden="true"></div>
+        <h2 class="cta__heading anim-up">
+          次のヒトカラも、<br>ちゃんと残しておこう。
+        </h2>
+        <p class="cta__sub anim-up anim-delay-1">歌った曲も、練習の感触も、あとから振り返れるように。</p>
+        <div class="cta__buttons anim-up anim-delay-2">
+          <a href="https://apps.apple.com/jp/app/%E3%83%92%E3%83%88%E3%82%AB%E3%83%A9%E3%83%9C/id6760980399" class="app-badge app-badge--large" target="_blank" rel="noopener noreferrer" aria-label="App Storeからダウンロード">
+            <span class="app-badge__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="38" height="38" focusable="false">
+                <path fill="currentColor" d="M16.89 12.91c.03 2.97 2.6 3.96 2.63 3.97-.02.07-.41 1.4-1.34 2.78-.81 1.19-1.64 2.37-2.97 2.39-1.31.03-1.73-.78-3.23-.78s-1.96.76-3.21.81c-1.28.05-2.26-1.29-3.07-2.47-1.66-2.39-2.93-6.76-1.22-9.73.85-1.47 2.36-2.41 4-2.44 1.25-.03 2.44.84 3.22.84.78 0 2.24-1.03 3.77-.88.64.03 2.43.26 3.58 1.94-.09.05-2.14 1.25-2.13 3.57Zm-2.02-7.12c.67-.81 1.12-1.94.99-3.06-.97.04-2.14.64-2.84 1.45-.62.72-1.17 1.87-1.02 2.98 1.08.08 2.18-.55 2.87-1.37Z"/>
+              </svg>
+            </span>
+            <span class="app-badge__text">
+              <span class="app-badge__title">App Store</span>
+              <span class="app-badge__subtitle">からダウンロード</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span class="site-footer__logo">ヒトカラボ</span>
+      <div class="site-footer__links">
+        <a href="https://g-horikoshi-216.github.io/hitokalab-pages/privacy-policy-ios.html">プライバシーポリシー</a>
+        <a href="#support">サポート</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdfla/">利用規約</a>
+      </div>
+      <p class="site-footer__copy">&copy; 2026 HitokaLab</p>
+    </div>
+  </footer>
+
+  <script>
+    // Intersection Observer for scroll animations
+    (function () {
+      var els = document.querySelectorAll('.anim-up');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+
+</body>
+</html>
